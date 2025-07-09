@@ -34,13 +34,13 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 ```bash
 pre-practica-project/
 │
-├── scripts/                     # Python scripts for MQTT, blockchain, bots
+├── code/                    
 │   ├── mqtt_random.py
 │   ├── mqtt_waspmote.py
 │   ├── send_to_blockchain.py
 │   └── darius_bot.py
 │
-├── screenshots/                # Visual documentation (.png files)
+├── photos/                # Visual documentation (.png files)
 │
 ├── README.md
 ├── LICENSE
