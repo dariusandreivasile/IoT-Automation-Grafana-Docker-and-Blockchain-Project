@@ -94,7 +94,13 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 - Also, created an alert, that sends a message if the temperature is **over 30**;
 
 For the next step, the random data generator script has been replaced with **real sensor data** from a **Libelium station**.
-- Generated a **Python Script**( mqtt_waspmote.py) , that gets the data from the **Libelium station**, using the **Broker** and the **Topic**, and creates a **JSON file**, ready to be sent in **Telegram**.
+- Generated a **Python Script**( mqtt_waspmote.py) , that gets the data from the **Libelium station**, using the **Broker** and the **Topic**, and creates a **JSON file**, ready to be sent in **Telegram**;
+- Created the architecture in **Node-Red**, in order to create the **JSON file**.
+  * The 2 JSON Nodes are used to convert the MQTT string payload into a JSON Object. There are 2, because sometimes the string is double-encoded.
+  * The Join Node collects all of the 11 individual sensor messages(generated from TC, BAT, PM, etc.) and combines them into a single message.
+  * The switch Node is to control when the BUILD FULL JSON function should run, only after receiving a specific signal that indicates all sensor data has arrived( in this case, the battery parameter).
+  * The function Node extracts each sensor from the joined array and builds one JSON object containing all values, timestamp, and source.
+
 
 
 
