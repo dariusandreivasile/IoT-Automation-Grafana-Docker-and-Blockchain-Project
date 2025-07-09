@@ -40,7 +40,7 @@ pre-practica-project/
 │   ├── send_to_blockchain.py
 │   └── darius_bot.py
 │
-├── photos/                # Visual documentation (.png files)
+├── photos/           
 │
 ├── README.md
 ├── LICENSE
