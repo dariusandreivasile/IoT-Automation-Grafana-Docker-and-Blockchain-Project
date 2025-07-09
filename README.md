@@ -56,7 +56,7 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ---
 
-# Wi-Fi configuration for Libelium
+### Wi-Fi configuration for Libelium
 
 
 ## Project Structure
