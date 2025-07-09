@@ -4,13 +4,13 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ## 🔧 Project Objectives
 
-- Connect an IoT device to an MQTT broker  
-- Store data both locally and on the cloud  
-- Secure data using blockchain (Ethereum)  
-- Orchestrate services via Arrowhead using Docker  
-- Visualize data with Grafana  
-- Enable data processing with Node-RED  
-- Allow queries via chatbot/voicebot  
+This pre-internship project demonstrates:
+- the integration of an IoT device with MQTT communication;
+- local and cloud storage;
+- blockchain security;
+- orchestration of Arrowhead services using Docker;
+- data visualization using Grafana;
+ 
 
 ---
 
