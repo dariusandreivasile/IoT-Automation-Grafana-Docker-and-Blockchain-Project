@@ -83,7 +83,14 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 - Added a **Function Node** into the architecture, that converts the Temperature from **Celsius to Kelvin**;
 - Checked the result with a **Debug Node**;
 
+---
 
+## ChatBot for Data Interrogation
+- Created a **ChatBot** using **Telegram**, to get the values generated at random by the **Python Script**;
+- get_latest_data() extracts the latest data from the JSON file;
+- The start() function displays every command available on the ChatBot;
+- The humidity(), temperature(), radiation(), precipitation() functions show the parameters in the ChatBot;
+- The all_data() function displays all the parameters extracted;
 
 
 
