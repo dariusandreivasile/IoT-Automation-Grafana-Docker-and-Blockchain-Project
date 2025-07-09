@@ -56,7 +56,39 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ---
 
-### Wi-Fi configuration for Libelium
+### 1. Wi-Fi configuration for Libelium
+- Connected to **WaspMote**, selected the right Port and implemented a Wi-Fi configuration code;
+- Now, the **Wi-Fi** is **configured** on the station;
+  
+### 2. Data Gathering
+- Uploaded a Data Gathering code, that declares each sensor by its socket;
+- Named the Moat ID as: “Darius-Libelium”. This is used to create the topic;
+- The data is collected from the station with .get() functions;
+- Printed text for user-friendly approach;
+- Created a frame that will be sent further to the Broker;
+
+### 3. Node-Red Data Processing
+- The data from WaspMote gets to the MQTT IN Node with the name: **meshlium3d4c/Darius-Libelium/#**, where: **meshlium3d4c** is the name of the meshlium, **Darius-Libelium** is the name of the topic, and **#** is used so the data from all the sensors is transmitted.
+- The data goes through a **JSON Node**, and then it does into the MQTT OUT Node with the topic **training/device/darius-vasile**;
+
+### 4. Grafana Data Visualization
+- Displayed the **Battery Status** and the **Temperature** in a Dashboard;
+- Displayed the **Pressure** as a **Gauge**;
+
+### 5. Grafana Alerts
+- Set 2 **alerts** for the temperature. An alert will be sent on my personal email if the temperature is **above 25** or **above 29**;
+- Received the **alert** on the email;
+
+### 6. Node-Red for Data Processing
+- Added a **Function Node** into the architecture, that converts the Temperature from **Celsius to Kelvin**;
+- Checked the result with a **Debug Node**;
+
+
+
+
+
+
+
 
 
 ## Project Structure
