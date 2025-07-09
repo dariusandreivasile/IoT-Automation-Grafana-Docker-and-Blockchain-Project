@@ -91,6 +91,13 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 - The start() function displays every command available on the ChatBot;
 - The humidity(), temperature(), radiation(), precipitation() functions show the parameters in the ChatBot;
 - The all_data() function displays all the parameters extracted;
+- Also, created an alert, that sends a message if the temperature is **over 30**;
+
+For the next step, the random data generator script has been replaced with **real sensor data** from a **Libelium station**.
+- Generated a **Python Script**( mqtt_waspmote.py) , that gets the data from the **Libelium station**, using the **Broker** and the **Topic**, and creates a **JSON file**, ready to be sent in **Telegram**.
+
+
+
 
 
 
