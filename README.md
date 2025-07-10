@@ -65,17 +65,19 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ![Waspmote_Wi-Fi](photos/Waspmote_Wi-Fi.png)
 
-- Connected to **WaspMote**, selected the right Port and implemented a Wi-Fi configuration code;
+- Connected to **WaspMote**, selected the right Port and implemented a Wi-Fi configuration code (**waspmote_wifi.ino**);
 - Now, the **Wi-Fi** is **configured** on the station;
   
 ### 2. Data Gathering
-- Uploaded a Data Gathering code, that declares each sensor by its socket;
-- Named the Moat ID as: “Darius-Libelium”. This is used to create the topic;
-- The data is collected from the station with .get() functions;
+- Uploaded a Data Gathering code (**waspmote_data_gathering.ino**), that declares each sensor by its socket;
+- Named the **Moat ID** as: **“Darius-Libelium”**. This is used to create the **topic**;
+- The data is collected from the station with **.get() functions**;
 - Printed text for user-friendly approach;
-- Created a frame that will be sent further to the Broker;
+- Created a **frame** that will be sent further to the **Broker**;
 
 ### 3. Node-Red Data Processing
+
+
 - The data from WaspMote gets to the MQTT IN Node with the name: **meshlium3d4c/Darius-Libelium/#**, where: **meshlium3d4c** is the name of the meshlium, **Darius-Libelium** is the name of the topic, and **#** is used so the data from all the sensors is transmitted.
 - The data goes through a **JSON Node**, and then it does into the MQTT OUT Node with the topic **training/device/darius-vasile**;
 
