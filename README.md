@@ -104,7 +104,7 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ### 6. Node-Red for Data Processing
 
-![Celsius-Kelvin](photos/Celsius-Kelvin.png)
+![Celsius-Kelvin](photos/Celsius-Kelvin.JPG)
 
 - Added a **Function Node** into the architecture, that converts the Temperature from **Celsius to Kelvin**;
 - Checked the result with a **Debug Node**;
