@@ -103,18 +103,29 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 - Received the **alert** on the email;
 
 ### 6. Node-Red for Data Processing
+
+![Celsius-Kelvin](photos/Celsius-Kelvin.png)
+
 - Added a **Function Node** into the architecture, that converts the Temperature from **Celsius to Kelvin**;
 - Checked the result with a **Debug Node**;
 
 ---
 
 ## ChatBot for Data Interrogation
-- Created a **ChatBot** using **Telegram**, to get the values generated at random by the **Python Script**;
-- get_latest_data() extracts the latest data from the JSON file;
-- The start() function displays every command available on the ChatBot;
-- The humidity(), temperature(), radiation(), precipitation() functions show the parameters in the ChatBot;
-- The all_data() function displays all the parameters extracted;
+- Created a **ChatBot** using **Telegram**, to get the values generated at random by the **Python Script** (**mqtt_random.py**);
+- Implemented a Python Script (**darius_bot.py**) that gahters the data and sends it in **Telegram**;
+- **get_latest_data()** extracts the latest data from the JSON file;
+- The **start()** function displays every command available on the ChatBot;
+- The **humidity()**, **temperature()**, **radiation()**, **precipitation()** functions show the parameters in the ChatBot;
+- The **all_data()** function displays all the parameters extracted;
+
+![ChatBot-RandomData](photos/ChatBot_Random_Data.png)
+
 - Also, created an alert, that sends a message if the temperature is **over 30**;
+
+![ChatBot-RandomData2](photos/ChatBot_Random_Data2.png)
+
+---
 
 For the next step, the random data generator script has been replaced with **real sensor data** from a **Libelium station**.
 - Generated a **Python Script**( mqtt_waspmote.py) , that gets the data from the **Libelium station**, using the **Broker** and the **Topic**, and creates a **JSON file**, ready to be sent in **Telegram**;
