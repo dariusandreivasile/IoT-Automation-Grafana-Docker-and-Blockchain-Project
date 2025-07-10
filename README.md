@@ -39,7 +39,7 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 ## Node-Red Data Processing
 - **Node-Red** is used to take the data from the **MQTT Broker**, process it, save it locally and send it to an InfluxDB Data Base;
 
-
+![Node-Red Architecture](photos/Node-Red_Random_Data.png)
 
 - The **MQTT IN** Node gets the data from the Broker using the server and the topic;
 - Used 2 **Debug Nodes** to check the data before and after applying a JSON Node;
