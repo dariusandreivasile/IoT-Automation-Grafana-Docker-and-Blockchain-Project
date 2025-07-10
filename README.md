@@ -51,6 +51,8 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 - Created a new **Grafana dashboard**;
 - Imported the **topic**(in this picture, it’s the temperature parameter, generated with the random values);
 
+![Grafana Visualization](photos/Random_Data_Visualization.png)
+
 ---
 
 ## Libelium for Data Gathering
