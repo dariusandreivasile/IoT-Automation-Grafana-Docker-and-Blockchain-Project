@@ -119,11 +119,11 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 - The **humidity()**, **temperature()**, **radiation()**, **precipitation()** functions show the parameters in the ChatBot;
 - The **all_data()** function displays all the parameters extracted;
 
-![ChatBot-RandomData](photos/ChatBot_Random_Data.png)
+![ChatBot-RandomData2](photos/ChatBot_Random_Data2.png)
 
 - Also, created an alert, that sends a message if the temperature is **over 30**;
 
-![ChatBot-RandomData2](photos/ChatBot_Random_Data2.png)
+![ChatBot-TempAlert](photos/ChatBot_Alert.png)
 
 ---
 
