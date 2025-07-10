@@ -30,7 +30,7 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 ---
 
 ## IoT Data Simulation
-- Used **Python Script** to simulate the communication;
+- Used **Python Script** (**mqtt_random.py**) to simulate the communication;
 - Imported all the **libraries** for MQTT, JSON;
 - Generated data for **temperature, humidity, solar radiation and precipitation** with a random function. Generated the timestamp using the .strftime() function;
   
