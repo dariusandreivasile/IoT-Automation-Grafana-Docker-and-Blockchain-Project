@@ -94,11 +94,11 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ### 5. Grafana Alerts
 
-![Alert-Grafana](photos/Libelium_Data_Alert.png)
+![Grafana-Alert](photos/Grafana-Alert.png)
 
 - Set 2 **alerts** for the temperature. An alert will be sent on my personal email if the temperature is **above 25** or **above 29**;\
 
-![Alert-Notification](photos/Alert-Notification.png)
+![Alert-Notification](photos/Alert_Notification.png)
 
 - Received the **alert** on the email;
 
