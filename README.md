@@ -139,7 +139,7 @@ For the next step, the random data generator script has been replaced with **rea
   
 - Created the architecture in **Node-Red**, in order to create the **JSON file**.
 
-1[Node-Red_ChatBot](photos/Node-Red_Libelium_Data_ChatBot.png)
+![Node-Red_ChatBot](photos/Node-Red_Libelium_Data_ChatBot.png)
   
   * The 2 **JSON Nodes** are used to convert the MQTT string **payload** into a **JSON Object**. There are 2, because sometimes the string is **double-encoded**;
     
