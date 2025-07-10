@@ -86,7 +86,9 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ![Libelium-Grafana](photos/Libelium_Data_Visualization.png)
 
+
 - Displayed the **Battery Status** and the **Temperature** in a Dashboard;
+  
 
 ![Libelium-Grafana](photos/Libelium_Data_Gauge.png)
 
@@ -101,6 +103,8 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 ![Alert-Notification](photos/Alert_Notification.png)
 
 - Received the **alert** on the email;
+
+---
 
 ### 6. Node-Red for Data Processing
 
@@ -121,24 +125,36 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ![ChatBot-RandomData2](photos/ChatBot_Random_Data2.png)
 
+
 - Also, created an alert, that sends a message if the temperature is **over 30**;
+  
 
 ![ChatBot-TempAlert](photos/ChatBot_Alert.png)
 
 ---
 
 For the next step, the random data generator script has been replaced with **real sensor data** from a **Libelium station**.
-- Generated a **Python Script**( mqtt_waspmote.py) , that gets the data from the **Libelium station**, using the **Broker** and the **Topic**, and creates a **JSON file**, ready to be sent in **Telegram**;
+
+- Generated a **Python Script** (**mqtt_waspmote.py**), that gets the data from the **Libelium station**, using the **Broker** and the **Topic**, and creates a **JSON file**, ready to be sent in **Telegram**;
+  
 - Created the architecture in **Node-Red**, in order to create the **JSON file**.
-  * The 2 **JSON Nodes** are used to convert the MQTT string **payload** into a **JSON Object**. There are 2, because sometimes the string is **double-encoded**.
-  * The Join Node collects all of the 11 individual sensor messages(generated from TC, BAT, PM, etc.) and combines them into a single message.
-  * The **switch Node** is to control when the **BUILD FULL JSON** function should run, only after receiving a specific signal that indicates all sensor data has arrived( in this case, the **battery parameter**).
-  * The **function Node** extracts each sensor from the joined array and builds one **JSON object** containing **all values**, timestamp, and source.
+
+1[Node-Red_ChatBot](photos/Node-Red_Libelium_Data_ChatBot.png)
+  
+  * The 2 **JSON Nodes** are used to convert the MQTT string **payload** into a **JSON Object**. There are 2, because sometimes the string is **double-encoded**;
+    
+  * The Join Node collects all of the 11 individual sensor messages(generated from TC, BAT, PM, etc.) and combines them into a single message;
+    
+  * The **switch Node** is to control when the **BUILD FULL JSON** function should run, only after receiving a specific signal that indicates all sensor data has arrived( in this case, the **battery parameter**);
+    
+  * The **function Node** extracts each sensor from the joined array and builds one **JSON object** containing **all values**, timestamp, and source;
+    
 - The code is functional and messages are **received**. The JSON File is ready to be sent, using **darius_bot.py**;
 
 ---
 
 ## Blockchain for Data Storage
+
 - Used **Blockchain** to store the data gathered from the sensors;
 
 Technologies used:
@@ -150,11 +166,21 @@ Technologies used:
 * **JSON** (for data format)
 
 - Used the **mqtt_random.py** File to generate Random Values for the parameters every **10 minutes**(because, if the rate is higher, the blockchain is not able to process the quick changes);
+  
 - Created a **MetaMask Wallet**. The Wallet acts as a blockchain identity (Wallet ID) and a signer for transactions (Private Key);
+  
 - Funded the **Wallet** (on the Sepolia Testnet) using a **faucet** – a free service that gives test ETH to developers. This is necessary, because of the **gas fees** on the blockchain.
+
+  ![Wallet_Funded](photos/Wallet_Funded.png)
+  
 - Created an **Ethereum RPC Endpoint** using **Alchemy**. Alchemy provides a high-reliability API endpoint to connect to the blockchain, **without running** an **Ethereum Node**.
+  
 - Generated a Python Code (**send_to_blockchain.py**), that connects to the **Sepolia blockchain** using the Alchemy RPC URL, reads IoT data from a **JSON file**, signs the data with the **wallet’s private key**, and sends it as a **transaction** to be permanently stored on the blockchain.
+  
 - Received **confirmation steps**, and an Etherscan link that shows the **full transaction details**;
+
+  ![Blockchain_Transaction](photos/Blockchain_Transaction.png)
+  
 - Now, the **transaction** is **visible**, and the data is **stored** in the **Blockchain**;
 
 --- 
