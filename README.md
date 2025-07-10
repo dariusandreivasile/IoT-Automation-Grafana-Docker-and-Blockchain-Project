@@ -77,16 +77,29 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 
 ### 3. Node-Red Data Processing
 
+![Libelium_Node-Red](photos/Node-Red_Libelium.png)
 
 - The data from WaspMote gets to the MQTT IN Node with the name: **meshlium3d4c/Darius-Libelium/#**, where: **meshlium3d4c** is the name of the meshlium, **Darius-Libelium** is the name of the topic, and **#** is used so the data from all the sensors is transmitted.
 - The data goes through a **JSON Node**, and then it does into the MQTT OUT Node with the topic **training/device/darius-vasile**;
 
 ### 4. Grafana Data Visualization
+
+![Libelium-Grafana](photos/Libelium_Data_Visualization.png)
+
 - Displayed the **Battery Status** and the **Temperature** in a Dashboard;
+
+![Libelium-Grafana](photos/Libelium_Data_Gauge.png)
+
 - Displayed the **Pressure** as a **Gauge**;
 
 ### 5. Grafana Alerts
-- Set 2 **alerts** for the temperature. An alert will be sent on my personal email if the temperature is **above 25** or **above 29**;
+
+![Alert-Grafana](photos/Libelium_Data_Alert.png)
+
+- Set 2 **alerts** for the temperature. An alert will be sent on my personal email if the temperature is **above 25** or **above 29**;\
+
+![Alert-Notification](photos/Alert-Notification.png)
+
 - Received the **alert** on the email;
 
 ### 6. Node-Red for Data Processing
