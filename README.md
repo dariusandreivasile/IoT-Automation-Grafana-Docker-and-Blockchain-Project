@@ -62,6 +62,9 @@ This repository documents a pre-internship project developed for **BEIA Consult 
 ---
 
 ### 1. Wi-Fi configuration for Libelium
+
+![Waspmote_Wi-Fi](photos/Waspmote_Wi-Fi.png)
+
 - Connected to **WaspMote**, selected the right Port and implemented a Wi-Fi configuration code;
 - Now, the **Wi-Fi** is **configured** on the station;
   
