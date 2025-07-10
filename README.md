@@ -179,7 +179,7 @@ Technologies used:
   
 - Received **confirmation steps**, and an Etherscan link that shows the **full transaction details**;
 
-  ![Blockchain_Transaction](photos/Blockchain_Transaction.png)
+  ![Blockchain_Transaction](photos/Blockchain_transaction.png)
   
 - Now, the **transaction** is **visible**, and the data is **stored** in the **Blockchain**;
 
