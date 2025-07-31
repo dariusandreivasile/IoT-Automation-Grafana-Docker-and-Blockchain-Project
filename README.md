@@ -286,6 +286,10 @@ Created the 3 Pages of the App:
 
 ![SensorScreen](photos/SensorScreen.png)
 
+<p align="center">
+  <img src="photos/SensorScreen.png" width="400" />
+</p>
+
 
 * **AutomationScreen** - prepared for **future automation of IoT Devices**. For the moment, it contains 2 **ON/OFF Buttons** for a **Sonoff Smart Water Valve** and a **Smart Light Bulb**.
 
