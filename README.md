@@ -207,6 +207,44 @@ Steps of Implementation:
 
 ![Mynodered](photos/Mynodered.png)
 
+* This is the **Node-Red Architecture**, so the data can be sent to Grafana:
+
+![Nodered_Docker](photos/Nodered_Docker.png)
+
+* **Grafana** - visualizes the data received via **MQTT**.
+
+![Grafana_Docker](photos/Grafana_Docker.png)
+
+* Now, when creating a **new Dashboard** in Grafana, the data from the **mqtt-random-container** can be visualized in **Grafana**.
+
+![Grafana_Visualizaion_Docker](photos/Grafana_Visualization_Docker.png)
+
+- In **Arrowhead**, created **documents** of the services, in order to be recognized:
+
+![Arrowhead_Documents](photos/Arrowhead_Documents.png)
+
+- Created a **Service Request** in the Chat, but received an error;
+
+![Arrowhead_Request](photos/Arrowhead_Request.png)
+
+Conclusions:
+
+
+The **3 Docker containers** have linked, even though they run separately. This happened **without Arrowhead**, because the 3 Docker Services were configured **manually**. There was no need for the Services to be discovered automatically.
+
+Here is where **Arrowhead becomes useful**. It works very well when there are many services that need to be **orchestrated and managed automatically**, without human intervention.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
