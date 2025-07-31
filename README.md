@@ -293,6 +293,13 @@ Created the 3 Pages of the App:
 
 ![AutomationScreen](photos/AutomationScreen.png)
 
+* In the **SensorScreen** page, added a **Box** that contains the **prediction for the next parameter values**. The prediction is **simple**, based on the mean of the difference between the **last 3 values of each parameter**.
+* Also, added **graphs for all of the parameters**. Each graph can be accessed with a **Dropdown Button**.
+
+![Prediction_Values_App](photos/Prediction_Values_App.png)
+
+
+
 
 This mobile application demonstrates a simple, but effective way of **monitoring environmental sensor data in real time**. It uses simulated IoT data to display **temperature, humidity, solar radiation, and precipitation** through a **user-friendly dashboard** and a **live temperature chart**.
 
