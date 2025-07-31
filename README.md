@@ -185,6 +185,34 @@ Technologies used:
 
 --- 
 
+## Arrowhead Orchestration with Docker
+
+Technologies Used:
+* **Docker** - to run isolated services in containers;
+* **Arrowhead** - to register services and ensure communication between them;
+* **Python Script** - for random data generation;
+
+Steps of Implementation:
+
+* Created 3 separate services, each running in its **own Docker container**:
+
+![Docker_Containers](photos/Docker_Containers.png)
+
+* **mqtt-random-container** - Docker container with a Python script that generates random IoT data and publishes this data to the MQTT topic: **training/device/darius-vasile/data-in.**
+
+![Mqtt_Random_Container](photos/Mqtt_Random_Container.png)
+
+
+* **mynodered** - Docker container that listens to messages on the **MQTT topic** and **sends the processed** data into **Grafana**.
+
+![Mqtt_Random_Container](photos/Mqtt_Random_Container.png)
+
+
+
+
+
+
+
 ## Project Structure
 
 ```bash
