@@ -275,16 +275,20 @@ Created the 3 Pages of the App:
 
 * **HomeScreen** - is the entry point of the App. It contains a Title, a custom background and 2 friendly buttons: one takes the user to the **SensorScreen** page, the other to the **AutomationScreen** page.
 
-![HomeScreen_Code](photos/HomeScreen_Code.png)
+<p align="center">
+  <img src="photos/HomeScreen_Code.png" width="400" />
+</p>
 
-![HomeScreen](photos/HomeScreen.png)
+<p align="center">
+  <img src="photos/HomeScreen.png" width="400" />
+</p>
 
 
 * **SensorScreen** - displays the data from the sensors in **real time** and a graph with the **last 20 temperature values**;
 
-![SensorScreen_Code](photos/SensorScreen_Code.png)
-
-![SensorScreen](photos/SensorScreen.png)
+<p align="center">
+  <img src="photos/SensorScreen_Code.png" width="400" />
+</p>
 
 <p align="center">
   <img src="photos/SensorScreen.png" width="400" />
@@ -293,14 +297,20 @@ Created the 3 Pages of the App:
 
 * **AutomationScreen** - prepared for **future automation of IoT Devices**. For the moment, it contains 2 **ON/OFF Buttons** for a **Sonoff Smart Water Valve** and a **Smart Light Bulb**.
 
-![AutomationScreen_Code](photos/AutomationScreen_Code.png)
+<p align="center">
+  <img src="photos/AutomationScreen_Code.png" width="400" />
+</p>
 
-![AutomationScreen](photos/AutomationScreen.png)
+<p align="center">
+  <img src="photos/AutomationScreen.png" width="400" />
+</p>
 
 * In the **SensorScreen** page, added a **Box** that contains the **prediction for the next parameter values**. The prediction is **simple**, based on the mean of the difference between the **last 3 values of each parameter**.
 * Also, added **graphs for all of the parameters**. Each graph can be accessed with a **Dropdown Button**.
 
-![Prediction_Values_App](photos/Prediction_Values_App.png)
+<p align="center">
+  <img src="photos/Prediction_Values_App.png" width="400" />
+</p>
 
 
 
