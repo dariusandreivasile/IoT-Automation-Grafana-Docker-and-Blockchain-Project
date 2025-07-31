@@ -205,7 +205,9 @@ Steps of Implementation:
 
 * **mynodered** - Docker container that listens to messages on the **MQTT topic** and **sends the processed** data into **Grafana**.
 
-![Mqtt_Random_Container](photos/Mqtt_Random_Container.png)
+![Mynodered](photos/Mynodered.png)
+
+
 
 
 
