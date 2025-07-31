@@ -235,6 +235,74 @@ The **3 Docker containers** have linked, even though they run separately. This h
 Here is where **Arrowhead becomes useful**. It works very well when there are many services that need to be **orchestrated and managed automatically**, without human intervention.
 
 
+## Mobile Application for Data Visualization and Automation
+
+Application’s purpose:
+* Displaying **real time data** from sensors and visualizing them in **graphs**;
+* Managing **automations** from an environment (ex:turning on/off a water valve/smart light bulb/water pump);
+
+Technologies Used:
+* **Expo Go / React Native** - to create the mobile app;
+* **Flask (Python)** - for local API;
+* **Python Script** - for random data generation;
+
+Steps of Implementation:
+* Used the **mqtt_random.py** Script to generate random data, but added a **history JSON File** that saved the last **20 sensor values**, in order to place them in a graph;
+
+![Mqtt_Random_App](photos/Mqtt_Random_App.png)
+
+* Created a Flask API (**api_server.py**) in order to handle the **JSON Files** and **display** them in the app;
+
+![Api_Server_py](photos/Api_Server_py.png)
+
+* In **Windows PowerShell**, created the **mqtt-sensor-classic folder** that holds the Project;
+
+![App_folder](photos/App_folder.png)
+
+In Windows Powershell, used commands for page navigation in the app and temperature graph : 
+
+* npx expo install @react-navigation/native
+* npx expo install @react-navigation/native-stack
+* npx expo install react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated
+* npx expo install react-native-chart-kit react-native-svg
+
+To run the App, used the **npx expo start** command;
+
+![App_QR](photos/App_QR.png)
+
+Created the 3 Pages of the App:
+
+* **HomeScreen** - is the entry point of the App. It contains a Title, a custom background and 2 friendly buttons: one takes the user to the **SensorScreen** page, the other to the **AutomationScreen** page.
+
+![HomeScreen_Code](photos/HomeScreen_Code.png)
+
+![HomeScreen](photos/HomeScreen.png)
+
+
+* **SensorScreen** - displays the data from the sensors in **real time** and a graph with the **last 20 temperature values**;
+
+![SensorScreen_Code](photos/SensorScreen_Code.png)
+
+![SensorScreen](photos/SensorScreen.png)
+
+
+* **AutomationScreen** - prepared for **future automation of IoT Devices**. For the moment, it contains 2 **ON/OFF Buttons** for a **Sonoff Smart Water Valve** and a **Smart Light Bulb**.
+
+![AutomationScreen_Code](photos/AutomationScreen_Code.png)
+
+![AutomationScreen](photos/AutomationScreen.png)
+
+
+This mobile application demonstrates a simple, but effective way of **monitoring environmental sensor data in real time**. It uses simulated IoT data to display **temperature, humidity, solar radiation, and precipitation** through a **user-friendly dashboard** and a **live temperature chart**.
+
+Although the automation controls are currently **visual-only** (with ON/OFF buttons), the application is structured in a **modular way** that allows for **future integration with real IoT devices**, MQTT-based actuation, voice commands, or cloud services.
+
+ 
+
+
+
+
+
 
 
 
