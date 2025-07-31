@@ -234,6 +234,7 @@ The **3 Docker containers** have linked, even though they run separately. This h
 
 Here is where **Arrowhead becomes useful**. It works very well when there are many services that need to be **orchestrated and managed automatically**, without human intervention.
 
+--- 
 
 ## Mobile Application for Data Visualization and Automation
 
