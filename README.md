@@ -269,7 +269,9 @@ In Windows Powershell, used commands for page navigation in the app and temperat
 
 To run the App, used the **npx expo start** command;
 
-![App_QR](photos/App_QR.png)
+<p align="center">
+  <img src="photos/App_QR.png" width="400" />
+</p>
 
 Created the 3 Pages of the App:
 
