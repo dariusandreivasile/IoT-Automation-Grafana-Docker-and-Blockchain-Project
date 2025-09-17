@@ -15,14 +15,14 @@ export default function HomeScreen({ navigation }) {
           style={styles.button}
           onPress={() => navigation.navigate('SensorScreen')}
         >
-          <Text style={styles.buttonText}>📟 View Sensor Data</Text>
+          <Text style={styles.buttonText}> View Sensor Data</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('AutomationScreen')}
         >
-          <Text style={styles.buttonText}>🤖 Automation</Text>
+          <Text style={styles.buttonText}> Automation</Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>
@@ -62,3 +62,4 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
+
