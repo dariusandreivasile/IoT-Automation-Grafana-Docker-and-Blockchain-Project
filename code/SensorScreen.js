@@ -109,7 +109,7 @@ export default function SensorScreen() {
         {/* Predicted values */}
         {Object.keys(predictions).length > 0 && (
           <View style={styles.predictionCard}>
-            <Text style={styles.predictionTitle}>📊 Predicted Values (next 3 min)</Text>
+            <Text style={styles.predictionTitle}> Predicted Values (next 3 min)</Text>
             {Object.entries(predictions).map(([key, values]) => (
               <Text key={key} style={styles.label}>
                 {key.charAt(0).toUpperCase() + key.slice(1)}: {values.join(' / ')}
@@ -226,3 +226,4 @@ const styles = StyleSheet.create({
     width: '100%',
   },
 });
+
